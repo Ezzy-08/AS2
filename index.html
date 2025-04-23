@@ -12,11 +12,18 @@
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
 </head>
 
-<body>
-    <div class="bg-image vh-100">
+<style>
+    .placeholder-white::placeholder {
+        color: white;
+        opacity: 1;
+    }
+</style>
+
+<body class="overflow-x-hidden">
+    <div class="bg-image vh-100"> 
         <nav class="navbar navbar-expand-lg navbar-dark " aria-label="Ninth navbar example">
             <div class="container-xl">
-                <a class="navbar-brand" href="#">Container XL</a>
+                <a class="navbar-brand fw-bold h2" href="#">HOST <span class="h6">CLOUD</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -24,30 +31,24 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample07XL">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto  mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link active text-info mx-3" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link mx-3" href="#">About Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Our Services</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Contact Us</a>
+                        </li>
+                        
                     </ul>
-                    <form role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    <form>
+                        <button type="button" class="rounded-0 py-2 ms-3 px-3 text-dark btn btn-outline-light">LOG IN </button>
+                        <button type="button" class="rounded-0 py-2 ms-3 px-3 text-light btn btn-info">SIGN UP</button>
                     </form>
                 </div>
             </div>
@@ -55,27 +56,36 @@
         <hr>
 
         <div class="container-xl">
-            <div class="text-light">
-                <div class="">SEARCH YOUR DOMAIN</div>
-                <div class="">
+            <div class="text-light text-center pt-5">
+                <div class="h1 fw-bold pt-5 mt-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    SEARCH YOUR DOMAIN
+                </div>
+                <div class="pt-5"  data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
                     <form action="#" method="post">
-                        <input type="text" name="search" width="me-auto">
-                        <button class="btn btn-bg-info">SEARCH NOW</button>
+                        <input class="w-50 border border-white p-2 placeholder-white text-light" style="background: none; " type="text" name="search"
+                            placeholder="Enter your domain here...">
+                        <button type="button" class="rounded-0 py-2 ms-3 px-3 text-light btn btn-info">SEARCH NOW</button>
                     </form>
+                    <div class="text-center text-light my-5 small">
+                        <span class="mx-3"><input type="checkbox" name="service">.com($10/yr)</span>
+                        <span class="mx-3"><input type="checkbox" name="service">.net($12/yr)</span>
+                        <span class="mx-3"><input type="checkbox" name="service">.org($8/yr)</span>
+                        <span class="mx-3"><input type="checkbox" name="service">.in($6/yr)</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-secondary">
+    <div class="bg-light" >
         <div class="container-xl">
             <div class="text-center">
-                <div>TRUSTED BY 1,250+ HAPPY CUSTOMERS WORLDWIDE</div>
+                <div class="h5 text-dark fw-bold pt-5"  data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">TRUSTED BY 1,250+ HAPPY CUSTOMERS WORLDWIDE</div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 py-5">
-                    <div class="col "><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
-                    <div class="col "><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
-                    <div class="col "><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
-                    <div class="col "><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
+                    <div class="col "  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000"><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
+                    <div class="col "  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000"><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
+                    <div class="col "  data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000"><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
+                    <div class="col "  data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000"><img src="./img/trusted-01.png" class="img-fluid" alt=""></div>
                 </div>
             </div>
         </div>
@@ -83,16 +93,16 @@
 
     <div class="bg-white">
         <div class="container-xl">
-            <div class="h6 text-info">Hosting Services</div>
-            <div class="h1 text-dark">Services we provide</div>
-            <div class="h6 text-secondary">
+            <div class="h6 text-info pt-5 mt-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Hosting Services</div>
+            <div class="h1 text-dark mt-3" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">Services we provide</div>
+            <div class="h6 text-secondary py-3" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
                 Host Cloud is a professional Bootstrap 4 template by TemplateMo for your hosting company websites. There
                 are 4 HTML pages included in this template. You can feel free to customize anything. Please share this
                 template to your friends. Thank you.
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 my-5 pb-5">
-                <div class="col" style="background-color: #f7f7f7;">
-                    <div class="text-center p-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 my-5 pb-5 gx-3">
+                <div class="col" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="bg-light text-center p-5">
                         <span class="h1 bg-info text-white rounded-circle p-3 mb-4"><i
                                 class="bi bi-database-fill "></i></span>
                         <div class="text-dark my-4">10x Light Cloud</div>
@@ -102,8 +112,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col " style="background-color: #f7f7f7;">
-                    <div class="text-center p-5">
+                <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="bg-light text-center p-5">
                         <span class="h1 bg-info text-white rounded-circle p-3 mb-4"><i
                                 class="bi bi-database-fill "></i></span>
                         <div class="text-dark my-4">Managed VPS Cloud</div>
@@ -114,8 +124,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col" style="background-color: #f7f7f7;">
-                    <div class="text-center p-5 ">
+                <div class="col" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                    <div class="bg-light text-center p-5 ">
                         <span class="h1 bg-info text-white rounded-circle p-3 mb-4"><i
                                 class="bi bi-database-fill "></i></span>
                         <div class="text-dark my-4">10x Light Cloud</div>
@@ -129,9 +139,16 @@
         </div>
     </div>
 
-    <div class="vh-100"><img src="./img/pricing-bg.jpg" class="img-fluid" alt=""></div>
-    <div class="container-xl" style="margin-top: -600px;">
-        <div class="text-center text-light">
+    <div class="vh-100 d-none d-md-block"><img src="./img/pricing-bg.jpg" class="img-fluid" alt=""></div>
+    <div class="container-xl">
+        <div class="d-none d-md-block text-center text-light" style="margin-top: -600px;" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="1000">
+            <div class="h1 mb-3">Cloud Hosting Plans</div>
+            <div class="h6 mb-5 ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, aliquid obcaecati. Provident cupiditate
+                quam reiciendis pariatur quibusdam eius, rem eaque!
+            </div>
+        </div>
+        <div class="d-block d-md-none text-center text-dark" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="1000">
             <div class="h1 mb-3">Cloud Hosting Plans</div>
             <div class="h6 mb-5 ">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, aliquid obcaecati. Provident cupiditate
@@ -139,84 +156,104 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col ">
-                <div class="bg-white p-3">
-                    <div class="h3 mb-5 mt-4">BASIC CLOUD 5X</div>
-                    <div class="bg-info  text-light text-center py-3 m-5">
-                        <div class="h3">$15.50</div>
-                        <div class="h6">MONTHLY</div>
+            <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="bg-white shadow p-3">
+                    <div class="text-center">
+                        <div class="h3 mb-5 mt-4">BASIC CLOUD 5X</div>
+                        <div class="bg-info  text-light text-center py-3 m-5">
+                            <div class="h3">$15.50</div>
+                            <div class="h6">MONTHLY</div>
+                        </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="h6 text-secondary">
+                        <div class="py-2 fst-italic">
                             Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non
                             tempus.
                         </div>
                         <hr>
-                        <div><i class="bi bi-check text-primary"></i> 500 GB Storage Space</div>
-                        <div><i class="bi bi-check text-primary"></i> 3 TB Data Transfer</div>
-                        <div><i class="bi bi-check text-primary"></i> Basic Managed Panel</div>
-                        <div><i class="bi bi-check text-primary"></i> 24/7 Fast Support</div>
-                        <div><i class="bi bi-check text-primary"></i> 100 Premium Themes</div>
-                        <div><i class="bi bi-check text-primary"></i> Cancel or Upgrade Anytime</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 500 GB Storage Space</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 3 TB Data Transfer</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> Basic Managed Panel</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 24/7 Fast Support</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 100 Premium Themes</div>
+                        <div class="pt-2 pb-5 fst-italic"><i class="bi bi-check text-primary"></i> Cancel or Upgrade
+                            Anytime</div>
                     </div>
+                </div>
+                <div class="text-center" style="margin-top: -30px;"><button type="button"
+                        class="rounded-0 py-2 ms-3 px-3 text-light btn btn-info " data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">START PLAN</button></div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="bg-white shadow p-3">
+                    <div class="text-center">
+                        <div class="h3 mb-5 mt-4">CLOUD VPS 10X</div>
+                        <div class="text-light text-center py-3 m-5" style="background: #6D0BC0;
+    background: linear-gradient(121deg, rgba(109, 11, 192, 1) 38%, rgba(59, 86, 237, 1) 69%);">
+                            <div class="h3">$30.00</div>
+                            <div class="h6">MONTHLY</div>
+                        </div>
+                    </div>
+                    <div class="h6 text-secondary">
+                        <div class="py-2 fst-italic">
+                            Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non
+                            tempus.
+                        </div>
+                        <hr>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 1 TB Storage Space</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 8 TB Data Transfer</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> Fully Managed Panel</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 15-minute Quick Support
+                        </div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> Unlimted Web Addons</div>
+                        <div class="pt-2 pb-5 fst-italic"><i class="bi bi-check text-primary"></i> Cancel or Upgrade
+                            Anytime</div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: -30px;"><button type="button"
+                        class="rounded-0 py-2 ms-3 px-3 text-light btn" style="background: #6D0BC0;
+    background: linear-gradient(121deg, rgba(109, 11, 192, 1) 38%, rgba(59, 86, 237, 1) 69%);" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">SELECT PLAN</button>
                 </div>
             </div>
-            <div class="col ">
-                <div class="bg-white p-3">
-                    <div class="h3 mb-5 mt-4">BASIC CLOUD 5X</div>
-                    <div class="bg-info  text-light text-center py-3 m-5">
-                        <div class="h3">$15.50</div>
-                        <div class="h6">MONTHLY</div>
+            <div class="col " data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <div class="bg-white shadow p-3">
+                    <div class="text-center">
+                        <div class="h3 mb-5 mt-4">ADVANCED CLOUD</div>
+                        <div class="bg-info  text-light py-3 m-5">
+                            <div class="h3">$72.25</div>
+                            <div class="h6">MONTHLY</div>
+                        </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="h6 text-secondary">
+                        <div class="py-2 fst-italic">
                             Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non
                             tempus.
                         </div>
                         <hr>
-                        <div><i class="bi bi-check text-primary"></i> 500 GB Storage Space</div>
-                        <div><i class="bi bi-check text-primary"></i> 3 TB Data Transfer</div>
-                        <div><i class="bi bi-check text-primary"></i> Basic Managed Panel</div>
-                        <div><i class="bi bi-check text-primary"></i> 24/7 Fast Support</div>
-                        <div><i class="bi bi-check text-primary"></i> 100 Premium Themes</div>
-                        <div><i class="bi bi-check text-primary"></i> Cancel or Upgrade Anytime</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class="bg-white p-3">
-                    <div class="h3 mb-5 mt-4">BASIC CLOUD 5X</div>
-                    <div class="bg-info  text-light text-center py-3 m-5">
-                        <div class="h3">$15.50</div>
-                        <div class="h6">MONTHLY</div>
-                    </div>
-                    <div>
-                        <div>
-                            Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non
-                            tempus.
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 4 TB Storage Space</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 20 TB Data Transfer</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> Fully Managed Panel</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> 15-minute Quick Support
                         </div>
-                        <hr>
-                        <div><i class="bi bi-check text-primary"></i> 500 GB Storage Space</div>
-                        <div><i class="bi bi-check text-primary"></i> 3 TB Data Transfer</div>
-                        <div><i class="bi bi-check text-primary"></i> Basic Managed Panel</div>
-                        <div><i class="bi bi-check text-primary"></i> 24/7 Fast Support</div>
-                        <div><i class="bi bi-check text-primary"></i> 100 Premium Themes</div>
-                        <div><i class="bi bi-check text-primary"></i> Cancel or Upgrade Anytime</div>
+                        <div class="py-2 fst-italic"><i class="bi bi-check text-primary"></i> Top Notch Web Apps</div>
+                        <div class="pt-2 pb-5 fst-italic"><i class="bi bi-check text-primary"></i> Advanced Scalable
+                        </div>
                     </div>
                 </div>
+                <div class="text-center" style="margin-top: -30px;"><button type="button"
+                        class="rounded-0 py-2 ms-3 px-3 text-light btn btn-info " data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">TAKE IT NOW</button></div>
             </div>
         </div>
     </div>
 
     <div class="container-xl">
-        <div class="text-center my-5 py-5">
+        <div class="text-center my-5 py-5" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="1000">
             <div class="h6 text-info">Best Quality for you</div>
             <div class="h1 text-dark">Cloud Features</div>
         </div>
-        <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 my-5">
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+        <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 my-5 g-5">
+            <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
@@ -224,32 +261,30 @@
                             <div class="text-dark h4">Load Balanced</div>
                             <div class="text-secondary h6">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis, fugit
-                                dicta recusandae quasi aut ab rerum aliquam iusto maxime officia cum voluptates velit
-                                excepturi earum delectus distinctio libero! Labore velit quod distinctio rerum
-                                laudantium neque aliquam aliquid inventore est!
+                                dicta recusandae quasi aut ab rerum aliquam ius
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-8">
                             <div class="text-dark h4">Load Balanced</div>
                             <div class="text-secondary h6">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
@@ -257,17 +292,15 @@
                             <div class="text-dark h4">Load Balanced</div>
                             <div class="text-secondary h6">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis, fugit
-                                dicta recusandae quasi aut ab rerum aliquam iusto maxime officia cum voluptates velit
-                                excepturi earum delectus distinctio libero! Labore velit quod distinctio rerum
-                                laudantium neque aliquam aliquid inventore est!
+                                dicta recusandae quasi aut ab rerum aliquam
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
@@ -281,24 +314,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-8">
                             <div class="text-dark h4">Load Balanced</div>
                             <div class="text-secondary h6">
-                                 neque aliquam aliquid inventore est!
+                                neque aliquam aliquid inventore est!
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="bg-white h-100">
-                    <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1000">
+                <div class="bg-white shadow h-100">
+                    <div class="row d-flex align-items-center d-flex justify-content-center">
                         <div class="col-4">
                             <img src="./img/feature-01.png" class="img-fluid" alt="">
                         </div>
@@ -312,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
